@@ -10,7 +10,7 @@ variable "instance_type" {
 
 variable "security_group" {
   description = "Name of security group"
-  default     = "3dasset"
+  default     = "launch-wizard-1"
 }
 
 variable "tag_name" {
@@ -21,4 +21,10 @@ variable "tag_name" {
 variable "ami_id" {
   description = "AMI for Ubuntu Ec2 instance"
   default     = "ami-098dc95f847244788"
+}
+
+variable "availability_zone" {
+  default = "us-east-1c"
+  description = "availabilty zone"
+  
 }
