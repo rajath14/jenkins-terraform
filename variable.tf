@@ -15,12 +15,12 @@ variable "security_group" {
 
 variable "tag_name" {
   description = "Tag Name of for Ec2 instance"
-  default     = "dbt instance"
+  default     = "dbt core"
 }
 
 variable "ami_id" {
-  description = "AMI for Ubuntu Ec2 instance"
-  default     = "ami-09d3b3274b6c5d4aa"
+  description = "AMI for DBT Ec2 instance which is already built"
+  default     = "ami-0838292a9cc81b571"
 }
 
 variable "availability_zone" {
