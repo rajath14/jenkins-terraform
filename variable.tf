@@ -28,3 +28,9 @@ variable "availability_zone" {
   description = "availabilty zone"
   
 }
+
+variable "key_name" {
+  default = "jenkins"
+  description = "key name for SSH"
+  
+}
