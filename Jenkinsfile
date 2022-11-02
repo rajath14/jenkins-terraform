@@ -28,7 +28,7 @@ pipeline {
             }
             
             steps {
-                sh 'terraform init -input=false -backend-config bucket="ad-dev-terraform-state-s3" -backend-config key="terraform-us-east-1-dbt-ec2.tfstate" -backend-config region="us-east-1" -backend-config dynamodb_table="ad-dev-terraform-state-lock"'
+                sh 'terraform init -input=false -backend-config bucket="ad-dev-terraform-state-s3" -backend-config key="terraform-dbt-ec2-us-east-1.tfstate" -backend-config region="us-east-1" -backend-config dynamodb_table="ad-dev-terraform-state-lock"'
                       
                 sh 'terraform workspace select ${environment} || terraform workspace new ${environment}'
 
